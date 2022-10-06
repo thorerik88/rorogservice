@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Barlow&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: inline-block;
+  background: #003366;
+  padding: .5rem;
+  width: 35%;
+  max-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #009933;
+}
+
+.button:hover {
+  background: lightgrey;
+  color: #003366;
+}
+
+.nav {
+  background: #003366;
+  position: relative;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__wrapper__logo {
+  width: 120px;
+  background-color: #003366;
+  border: 2px solid #717d8e;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px;
+}
+
+.nav__wrapper__logo img {
+  width: 110px;
+  height: 80px;
+}
+
+.nav__wrapper__fagmann {
+  margin-left: -3rem;
+  width: 100px;
+}
+
+@media only screen and (min-device-width: 993px) {
+  .nav__wrapper__mobile-menu {
+    display: none;
+  }
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  padding: 1rem .7rem;
+  line-height: 1.7rem;
+  font-size: 20px;
+  right: 0;
+  top: 87px;
+  width: 50%;
+  color: white;
+  background: #003366;
+}
+
+@media only screen and (min-device-width: 993px) {
+  .dropdown {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  .dropdown ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+  }
+  .dropdown ul li {
+    margin: 0 1rem;
+  }
+  .dropdown ul li a:hover {
+    border-bottom: 1px solid white;
+  }
+}
+
+.news {
+  background: #b8d8f2;
+  text-align: center;
+  padding: .2rem 1rem;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("../../assets/faucet_1920x700.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 300px;
+  box-shadow: .5px .5px 3px black;
+}
+
+.hero__wrapper {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.hero__wrapper__heading {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hero__wrapper__buttons {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-device-width: 769px) {
+  .hero {
+    height: 400px;
+  }
+  .hero__wrapper {
+    padding-top: 5rem;
+  }
+  .hero__wrapper__buttons {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (min-device-width: 993px) {
+  .hero__wrapper__heading {
+    font-size: 40px;
+  }
+  .hero__wrapper__buttons {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .hero {
+    height: 650px;
+  }
+}
+
+.services {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.services h2 {
+  margin: 0 0 1rem;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.services__list li {
+  text-align: left;
+  line-height: 1.7rem;
+}
+
+.services__list li:before {
+  background: url("../../assets/arrow_icon.svg");
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 2px 0;
+}
+
+@media only screen and (min-device-width: 993px) {
+  .services__list li {
+    line-height: 4rem;
+  }
+}
+
+.inspection {
+  padding-top: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/clogged_1920x800.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  text-align: center;
+}
+
+.inspection__heading {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+}
+
+.inspection a {
+  margin-top: 5rem;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .inspection {
+    min-height: 400px;
+    padding-top: 6rem;
+  }
+}
+
+.jacuzzi {
+  margin: 3.5rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+}
+
+.jacuzzi__img img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.jacuzzi__text {
+  padding: 1rem;
+}
+
+.jacuzzi__text h3 {
+  margin: 0 0 1rem;
+}
+
+.jacuzzi__text p a {
+  color: #003366;
+  border-bottom: 1px solid #003366;
+}
+
+.jacuzzi__text p:last-of-type {
+  margin: .5rem 0;
+}
+
+.jacuzzi__text__button {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-device-width: 769px) {
+  .jacuzzi {
+    flex-direction: row;
+  }
+  .jacuzzi__img img {
+    border-radius: 10px 0 0 0;
+    height: 100%;
+    width: 300px;
+  }
+  .jacuzzi__text__button {
+    text-align: left;
+  }
+  .jacuzzi__text__button .button {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 993px) {
+  .jacuzzi {
+    margin: 6rem auto;
+  }
+}
+
+.befaring {
+  background: url(../../assets/inspection_1920x500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.befaring__heading {
+  padding: .5rem 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-device-width: 993px) {
+  .befaring {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .befaring {
+    min-height: 400px;
+  }
+}
+
+.address {
+  padding: 3rem 0;
+  background: #003366;
+  color: white;
+}
+
+.address h3 {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.address__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.address__wrapper ul {
+  list-style: none;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+}
+
+@media only screen and (min-device-width: 993px) {
+  .address {
+    padding: 6rem 4rem;
+  }
+  .map iframe {
+    height: 400px;
+  }
+}
+
+.footer {
+  padding: 1rem 0;
+  background: #003366;
+  color: white;
+  text-align: center;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__wrapper__logo {
+  width: 110px;
+  height: 80px;
+  margin: 0 auto 1rem;
+}
+
+.footer__wrapper__menu {
+  margin: 1rem 0;
+  line-height: 1.4rem;
+}
+
+.footer__wrapper__menu a:hover {
+  border-bottom: 1px solid white;
+}
+
+.footer__proteq {
+  font-size: 10px;
+}
+
+.footer__proteq img {
+  height: 30px;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  color: white;
+  font-size: 24px;
+}
+/*# sourceMappingURL=main.css.map */
